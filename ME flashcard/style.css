@@ -1,42 +1,79 @@
 body {
-  background-color: #000;
-  font-family: sans-serif;
-  color: #fff;
-  max-width: 950px;
-  width: 95%;
-  margin: auto;
-  padding: 75px;
-}
-
-.box {
-  display: flex;
-  box-sizing: border-box;
-  justify-content: center;
-  background: linear-gradient(135deg, #5dade2 0%, #2e86c1 100%);
-  padding: 20px;
-  border-radius: 8px;
-  margin: auto;
-  box-shadow: 0 15px 45px #fff6;
-}
-
-.box_inside h1 {
-  font-size: 2.5rem;
   margin: 0;
+  font-family: sans-serif;
+  color: #eee;
+  background: #222;
 }
 
-.box_inside h2 {
-  letter-spacing: 2px;
+h2 {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 1.3em;
+  padding: 10px;
 }
 
-.box_inside p {
-  line-height: 1.6;
-  font-size: 0.95rem;
+form {
+  background-color: transparent;
+  padding: 20px;
+  margin: auto;
+  max-width: 500px;
+  box-shadow: 0 0 45px #fff2;
+  margin-top: 50px;
+  border-radius: 8px;
+  font-size: 14px;
+  margin-bottom: 30px;
 }
 
-.profile-pic {
-  border-radius: 50%;
-  width: 125px;
-  height: 125px;
-  object-fit: cover;
-  border: 2px solid #888;
+.form_input {
+  margin: 6px 0;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 6px 12px;
+  border: none;
+  border: 1px solid #999;
+  box-shadow: 0 0 12px #0003;
+  background-color: transparent;
+  color: #ccc;
+  margin-top: px;
+}
+
+textarea {
+  min-width: 100%;
+  resize: none;
+  min-height: 102px;
+  font-family: sans-serif;
+}
+
+label {
+  font-size: 0.87em;
+  line-height: 2;
+}
+
+.checkbox {
+  width: auto;
+  height: 10px;
+}
+
+option {
+  background: #222;
+}
+
+fieldset {
+  margin: 20px;
+  border: 1px solid #ddd4;
+  border-radius: 8px;
+  padding: 10px 15px 14px 15px;
+}
+
+legend {
+  padding: 0 10px;
+  color: #888;
 }
