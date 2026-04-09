@@ -1,30 +1,76 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
-    <title>Flashcard</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="box">
-      <div class="box_inside">
-        <h1>Jose Garcia</h1>
-        <h2>Frontend Developer</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-          soluta aliquam sed ex blanditiis esse nam magnam, quis, illo mollitia
-          molestiae at ipsa, cumque iure. Doloremque, rem. Illo, qui culpa.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum
-          dolor, sit amet consectetur adipisicing elit. Accusamus numquam totam
-          nemo iste veritatis perspiciatis necessitatibus, dolorem quos soluta,
-          maiores fugiat, doloribus dolores alias fugit. Eligendi deleniti
-          nesciunt qui maiores.
-        </p>
+    <form>
+      <h2>Formulario de Contacto</h2>
+      <fieldset>
+        <legend>Basic Information</legend>
+        <div class="form_input">
+          <!--Name-->
+          <label for="name">Full name</label>
+          <input type="text" placeholder="John Perez" id="name" required />
+        </div>
+        <div class="form_input">
+          <!--Email-->
+          <label for="email">Email</label>
+          <input
+            type="email"
+            placeholder="example@gmail.com"
+            id="email"
+            required
+          />
+        </div>
+        <div class="form_input">
+          <!--Age - Years-->
+          <label
+            >Age - Years
+            <input type="number" placeholder="33" required />
+          </label>
+        </div>
+      </fieldset>
+      <div class="form_input">
+        <!--Type of users-->
+        <label
+          >Type of users
+          <select name="type-of-users">
+            <option value="user1">Follower</option>
+            <option value="user2">Enterprise</option>
+            <option value="user3">Others</option>
+          </select>
+        </label>
       </div>
-      <img
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTazPa96sp1s37O649gJvfzZXIriZk6fQz8jA&s"
-        alt="Profile-photo"
-        class="profile-pic"
-      />
-    </div>
+      <div class="form_input">
+        <!--Referred by-->
+        <label
+          >Referred by
+          <input list="reference" />
+          <datalist id="reference" name="names">
+            <option value="CEO">Mark Phoenix</option>
+            <option value="Manager">Peter Draxler</option>
+            <option value="Enterprise">Microsoft</option>
+          </datalist>
+        </label>
+      </div>
+      <div class="form_input">
+        <!--Message-->
+        <label for="message">Message</label>
+        <textarea
+          placeholder="Leave us a Message..."
+          id="message"
+          rows="8"
+        ></textarea>
+      </div>
+      <div class="form_input">
+        <!--Terms and condition-->
+        <label for="terms">I aggre the terms and conditions</label>
+        <input type="checkbox" class="checkbox" id="terms" />
+      </div>
+    </form>
   </body>
 </html>
